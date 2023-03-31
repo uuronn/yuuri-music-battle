@@ -6,8 +6,8 @@ const LoginPage = (): JSX.Element => {
   return (
     <main className="bg-black bg-opacity-30 h-screen">
       <Container className="h-3/4 flex justify-center items-center">
-        <div className="p-8 sm:p-16 bg-white max-w-3xl m-auto rounded-xl">
-          <h1 className="text-base text-center sm:text-2xl mb-12">
+        <div className="p-8 md:p-16 bg-white max-w-3xl m-auto rounded-xl">
+          <h1 className="text-base text-center md:text-2xl mb-12">
             どのアカウントでログインしますか？
           </h1>
           <div className="flex flex-col gap-4 items-center justify-center">

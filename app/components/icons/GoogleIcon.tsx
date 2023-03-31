@@ -10,7 +10,7 @@ export const GoogleIcon = ({
     width={32}
     height={32}
     alt="Googleの画像"
-    className={classNames("sm:w-12", className)}
+    className={classNames("md:w-12", className)}
     priority
   />
 );

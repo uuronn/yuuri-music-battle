@@ -10,7 +10,7 @@ export const TwitterIcon = ({
     width={32}
     height={32}
     alt="Twitterの画像"
-    className={classNames("sm:w-12", className)}
+    className={classNames("md:w-12", className)}
     priority
   />
 );

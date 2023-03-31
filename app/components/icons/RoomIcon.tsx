@@ -10,7 +10,7 @@ export const RoomIcon = ({
     width={64}
     height={64}
     alt="家の画像"
-    className={classNames("sm:w-20", className)}
+    className={classNames("md:w-20", className)}
     priority
   />
 );

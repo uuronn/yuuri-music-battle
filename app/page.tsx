@@ -25,7 +25,7 @@ const Home = (): JSX.Element => {
         >
           オンライン: {onlineCount}人
         </p>
-        <ul className="flex flex-col sm:flex-row items-center justify-center gap-10">
+        <ul className="flex flex-col md:flex-row items-center justify-center gap-10">
           {ROOM_LIST.map((room) => (
             <li key={room.roomId}>
               <MatchRoom
