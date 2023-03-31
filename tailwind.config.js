@@ -5,7 +5,9 @@ module.exports = {
   purge: {
     content: [
       "./app/*.{js,ts,jsx,tsx}",
+      "./app/**/**/*.{js,ts,jsx,tsx}",
       "./app/components/**/*.{js,ts,jsx,tsx}",
+      "./app/features/**/**/*.{js,ts,jsx,tsx}",
     ],
     options: {
       // https://purgecss.com/safelisting.html#patterns
