@@ -4,8 +4,8 @@ import { TwitterLoginButton } from "@/app/features/auth/components/TwitterLoginB
 
 const LoginPage = (): JSX.Element => {
   return (
-    <main className="pt-32 bg-black bg-opacity-30 h-screen">
-      <Container>
+    <main className="bg-black bg-opacity-30 h-screen">
+      <Container className="h-3/4 flex justify-center items-center">
         <div className="p-8 sm:p-16 bg-white max-w-3xl m-auto rounded-xl">
           <h1 className="text-base text-center sm:text-2xl mb-12">
             どのアカウントでログインしますか？
