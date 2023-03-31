@@ -2,7 +2,7 @@ import { Container } from "@/app/components/Container";
 import { GoogleLoginButton } from "@/app/features/auth/components/GoogleLoginButton";
 import { TwitterLoginButton } from "@/app/features/auth/components/TwitterLoginButton";
 
-export default function Home() {
+const LoginPage = (): JSX.Element => {
   return (
     <main className="pt-32 bg-black bg-opacity-30 h-screen">
       <Container>
@@ -18,4 +18,6 @@ export default function Home() {
       </Container>
     </main>
   );
-}
+};
+
+export default LoginPage;
