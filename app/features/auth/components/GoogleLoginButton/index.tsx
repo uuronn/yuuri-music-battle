@@ -6,7 +6,7 @@ import { GoogleIcon } from "@/app/components/icons/GoogleIcon";
 export const GoogleLoginButton = () => {
   return (
     // TODO: Googleログインの処理を書く（SCなど意識してみよう）
-    <AuthButton onClick={() => console.log("test")}>
+    <AuthButton onClick={() => console.log("google login")}>
       <GoogleIcon />
       Googleでログイン
     </AuthButton>

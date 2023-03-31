@@ -1,5 +1,6 @@
 import { Container } from "@/app/components/Container";
 import { GoogleLoginButton } from "@/app/features/auth/components/GoogleLoginButton";
+import { TwitterLoginButton } from "@/app/features/auth/components/TwitterLoginButton";
 
 export default function Home() {
   return (
@@ -9,8 +10,9 @@ export default function Home() {
           <h1 className="text-base text-center sm:text-2xl mb-12">
             どのアカウントでログインしますか？
           </h1>
-          <div className="flex justify-center">
+          <div className="flex flex-col gap-4 items-center justify-center">
             <GoogleLoginButton />
+            <TwitterLoginButton />
           </div>
         </div>
       </Container>
