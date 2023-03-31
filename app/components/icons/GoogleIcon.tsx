@@ -6,7 +6,7 @@ export const GoogleIcon = (): JSX.Element => (
     width={32}
     height={32}
     alt="Googleの画像"
-    className="sm:w-12 bg-black"
+    className="sm:w-12"
     priority
   />
 );
