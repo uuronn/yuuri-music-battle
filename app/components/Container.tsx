@@ -7,6 +7,8 @@ interface Props extends ComponentPropsWithRef<"div"> {
 
 export const Container = ({ children, className }: Props): JSX.Element => {
   return (
-    <div className={classNames("max-w-7xl m-auto", className)}>{children}</div>
+    <div className={classNames("max-w-7xl m-auto px-4", className)}>
+      {children}
+    </div>
   );
 };
