@@ -1,4 +1,5 @@
 import { Container } from "./components/Container";
+import { LogoutButton } from "./features/auth/components/LogoutButton";
 import { MatchRoom } from "./features/room/MatchRoom";
 
 const Home = (): JSX.Element => {
@@ -15,7 +16,7 @@ const Home = (): JSX.Element => {
     <main className="h-screen">
       <Container className="h-full flex justify-center items-center relative">
         <p
-          className={`text-2xl flex gap-2 absolute top-[32px] right-[16px] before:content-[''] before:block before:rounded-full before:w-4 before:h-4 ${
+          className={`text-base flex gap-2 absolute top-[32px] left-[16px] md:text-3xl before:content-[''] before:block before:rounded-full before:w-4 before:h-4 ${
             onlineCount >= 2
               ? "before:bg-green-500"
               : onlineCount === 1
@@ -25,6 +26,7 @@ const Home = (): JSX.Element => {
         >
           オンライン: {onlineCount}人
         </p>
+        <LogoutButton className="absolute top-[32px] right-[16px]" />
         <ul className="flex flex-col md:flex-row items-center justify-center gap-10">
           {ROOM_LIST.map((room) => (
             <li key={room.roomId}>
