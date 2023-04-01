@@ -4,6 +4,8 @@ import { AuthButton } from "@/app/components/AuthButton";
 import { DoorIcon } from "@/app/components/icons/DoorIcon";
 import { ComponentPropsWithRef } from "react";
 import classNames from "classnames";
+import { signOut } from "firebase/auth";
+import { auth } from "@/firebaseConfig";
 
 export const LogoutButton = ({
   className,
@@ -11,7 +13,7 @@ export const LogoutButton = ({
   return (
     <AuthButton
       className={classNames("", className)}
-      onClick={() => console.log("logout")}
+      onClick={() => signOut(auth)}
     >
       <DoorIcon />
       ログアウト
