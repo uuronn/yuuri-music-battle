@@ -12,10 +12,6 @@ const LoginPage = (): JSX.Element => {
 
   onAuthStateChanged(auth, (user) => {
     if (user) return router.replace("/");
-    // if (!user.displayName) return;
-    console.log("onAuthのuser: ", user);
-    // setName(user.displayName);
-    // setUserId(user.uid);
   });
 
   return (
