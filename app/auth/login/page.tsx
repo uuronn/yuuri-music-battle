@@ -1,8 +1,23 @@
+"use client";
+
 import { Container } from "@/app/components/Container";
 import { GoogleLoginButton } from "@/app/features/auth/components/GoogleLoginButton";
 import { TwitterLoginButton } from "@/app/features/auth/components/TwitterLoginButton";
+import { auth } from "@/firebaseConfig";
+import { onAuthStateChanged } from "firebase/auth";
+import { useRouter } from "next/navigation";
 
 const LoginPage = (): JSX.Element => {
+  const router = useRouter();
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) return router.replace("/");
+    // if (!user.displayName) return;
+    console.log("onAuthのuser: ", user);
+    // setName(user.displayName);
+    // setUserId(user.uid);
+  });
+
   return (
     <main className="bg-black bg-opacity-30 h-screen">
       <Container className="h-3/4 flex justify-center items-center">
