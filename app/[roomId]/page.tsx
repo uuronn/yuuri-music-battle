@@ -2,7 +2,12 @@ import { Container } from "../components/Container";
 import { AnswerButton } from "../features/room/AnswerButton";
 import { UserNameTag } from "../features/room/UserNameTag";
 
-const RoomPage = (): JSX.Element => {
+const RoomPage = async ({
+  params: { roomId },
+}: {
+  params: { roomId: string };
+}) => {
+  console.log("test", roomId);
   // TODO: バックエンドからルームに入っているユーザーをリアルタイムで取得
   const USER_NAME_LIST = [
     "ウーロンテスト",
